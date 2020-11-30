@@ -1,6 +1,7 @@
 .navContainer {
   z-index: 10;
   position: sticky;
+  top: 0px;
   display: flex;
   justify-content: flex-end;
   background: rgb(94, 141, 94);

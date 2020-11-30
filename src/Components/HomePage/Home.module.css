@@ -1,3 +1,8 @@
+.homeContainer {
+  display: flex;
+}
+
+
 .sidebarContainer {
   background: rgb(94, 141, 94);
   width: 15vw;
@@ -9,3 +14,4 @@
   padding: 1rem;
   padding-top: 2rem;
 }
+
