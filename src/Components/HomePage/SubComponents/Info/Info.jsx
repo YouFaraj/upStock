@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
+import News from "./News/News.jsx";
+import WhyUpStock from "./WhyUpStock/WhyUpStock.jsx";
 
-const Info = ({name}) => {
+const Info = ({ name }) => {
   return (
-    <p>Hi From {name}</p>
+  <div>{ name === "news" ? <News /> : <WhyUpStock /> }</div>
   )
-}
+};
 
 export default Info;
