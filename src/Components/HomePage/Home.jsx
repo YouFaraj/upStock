@@ -1,8 +1,11 @@
 import React from 'react';
-
+import SideBar from './SubComponents/SideBar/SideBar.jsx';
+import Styles from './Home.module.css';
 const Home = () => {
   return (
-    <h1>Hello From Home</h1>
+    <div className={Styles.sidebarContainer}>
+      <SideBar />
+    </div>
   )
 }
 
