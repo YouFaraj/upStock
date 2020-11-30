@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SideBar from './SubComponents/SideBar/SideBar.jsx';
 import Styles from './Home.module.css';
-import CardList from './SubComponents/CardList/CardList.jsx';
+import Info from './SubComponents/Info/Info.jsx';
 const Home = () => {
+  const [name, setName] = useState('News')
   return (
     <div className={Styles.homeContainer}>
     <div className={Styles.sidebarContainer}>
-      <SideBar />
+      <SideBar changeName={setName} />
     </div>
-      <CardList />
+      <Info name={name} />
     </div>
 
   )
