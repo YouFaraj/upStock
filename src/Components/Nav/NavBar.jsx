@@ -1,22 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./NavBar.module.css";
 
 const NavBar = () => {
+  const navlinks = [
+    ["/", "Home"],
+    ["/mystocks", "MyStocks"],
+    ["/stocks", "Stocks"],
+    ["/forum", "Forum"],
+  ];
   return (
-    <div className={styles.navContainer}>
-      <Link className={styles.link} to="/">
-        Home
-      </Link>
-      <Link className={styles.link} to="/mystocks">
-        MyStocks
-      </Link>
-      <Link className={styles.link} to="/stocks">
-        Stocks
-      </Link>
-      <Link className={styles.link} to="/forum">
-        Forum
-      </Link>
+    <div className="flex justify-between items-center bg-blue-800 border-b-2 py-4 md:justify-end md:space-x-10 pr-6">
+      {navlinks.map((elm) => (
+        <Link
+          key={elm[0]}
+          className="rounded-md p-2 inline-flex items-center justify-center text-white hover:text-blue-800 hover:bg-gray-100 focus:outline-none"
+          to={elm[0]}
+        >
+          {elm[1]}
+        </Link>
+      ))}
     </div>
   );
 };
