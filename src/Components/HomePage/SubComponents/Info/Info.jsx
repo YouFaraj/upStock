@@ -3,9 +3,7 @@ import News from "./News/News.jsx";
 import WhyUpStock from "./WhyUpStock/WhyUpStock.jsx";
 
 const Info = ({ name }) => {
-  return (
-  <div>{ name === "news" ? <News /> : <WhyUpStock /> }</div>
-  )
+  return name === "news" ? <News /> : <WhyUpStock />;
 };
 
 export default Info;
