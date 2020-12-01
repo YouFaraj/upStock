@@ -5,7 +5,7 @@ import Home from './Components/HomePage/Home.jsx';
 
 const App = () => {
   return (
-    <div>
+    <div className="max-h-screen">
       <NavBar />
       <Switch>
         <Route path="/">
