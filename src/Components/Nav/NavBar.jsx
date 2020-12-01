@@ -9,7 +9,7 @@ const NavBar = () => {
     ["/forum", "Forum"],
   ];
   return (
-    <div className="flex justify-between items-center bg-blue-800 border-b-2 py-4 md:justify-end md:space-x-10 pr-6">
+    <div className="flex justify-between items-center bg-blue-800 py-4 md:justify-end md:space-x-8">
       {navlinks.map((elm) => (
         <Link
           key={elm[0]}
